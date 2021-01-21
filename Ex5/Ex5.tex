@@ -1,0 +1,57 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[french]{babel}
+\usepackage[latin1]{inputenc}
+%\usepackage{umlaut,amssymb,amsmath,amscd,a4,amsfonts}
+\usepackage{amssymb,amsmath,amscd,a4,amsfonts,amsthm,mathrsfs}
+%(a4 = 210 X 297 mm)
+\hoffset -1in \voffset -1in \oddsidemargin 20mm \evensidemargin
+\oddsidemargin \textwidth 170mm \topmargin 5mm \textheight 247mm
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+
+\theoremstyle{definition}
+\newtheorem{exercise}{Exercise}
+
+\begin{document}
+
+\pagestyle{headings}
+\noindent UNIVERSITE DE GENEVE \hfill Section de Mathématiques\\
+\noindent Facult\'e des sciences \hfill \\[-3mm]
+\hrule
+
+\large
+
+\begin{center}
+\textbf{Topics In Probability And Analysis \\ Exercise Sheet 5 - Discussed on 22.10.2020}
+\end{center}
+\hrule
+\text{}\\[1cm]
+
+We define $\text{Slice}_t := \{(x,y): x-y = t\} \subset \mathbb{R}^2$.
+
+\begin{exercise}
+    Show that for two sets $A,B$ we have $\dim_M(A\times B \cap \text{Slice}_t) \leq (\dim_M(A \times B) - 1)_+$ for almost every $t$.
+\end{exercise}
+
+\begin{exercise}
+    Review the construction for $\dim(A \times B) > \dim(A) + \dim(B)$.
+
+    Show that if we only iterate the $A$ step, we get
+    \[\dim(B) = 1, \; \dim(A) = \frac{1}{2}, \; \dim(A \times B) = \frac{3}{2}.\]
+
+    Furthermore show that for $K_j = L_j = K \; \forall j$ we get 
+    \[\dim(A) = \frac{3}{4} = \dim(B), \quad \dim(A \times B) = \frac{3}{4}.\]
+\end{exercise}
+
+\begin{exercise}
+    Give explicit formulas for the contractions that have the Koch Snowflake and the Sierpinski Carpet as attractors.
+\end{exercise}
+
+\begin{exercise}
+    Let $\text{CPT}(X) = \{K \subset X: K \text{ compact }, K\neq \emptyset\}$ and $d_H(K,L) = \inf \{\epsilon > 0: K \subset L_\epsilon, L \subset K_\epsilon\}$ the Hausdorff distance.
+
+    Show that $d_H$ is a metric on $\text{CPT}(X)$.
+\end{exercise}
+
+\end{document}

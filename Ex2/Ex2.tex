@@ -1,0 +1,64 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[french]{babel}
+\usepackage[latin1]{inputenc}
+%\usepackage{umlaut,amssymb,amsmath,amscd,a4,amsfonts}
+\usepackage{amssymb,amsmath,amscd,a4,amsfonts,amsthm,mathrsfs}
+%(a4 = 210 X 297 mm)
+\hoffset -1in \voffset -1in \oddsidemargin 20mm \evensidemargin
+\oddsidemargin \textwidth 170mm \topmargin 5mm \textheight 247mm
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+
+\theoremstyle{definition}
+\newtheorem{exercise}{Exercise}
+
+\begin{document}
+
+\pagestyle{headings}
+\noindent UNIVERSITE DE GENEVE \hfill Section de Mathématiques\\
+\noindent Facult\'e des sciences \hfill \\[-3mm]
+\hrule
+
+\large
+
+\begin{center}
+\textbf{Topics In Probability And Analysis \\ Exercise Sheet 2 - Discussed on 01.10.2020}
+\end{center}
+\hrule
+\text{}\\[1cm]
+
+
+\begin{exercise}[4-adic boxes]
+    Consider the set $K \subset [0,1]^2$ given by the following construction. $K_0 = [0,1]^2$ and $K_{n+1}$ is $K_n$ with each square replaced by $4$ squares of side length $\frac{1}{4^n}$ filling out their corners. Then $K = \bigcap_n K_n$.
+
+    Show that $\dim_M(K) = 1$.
+\end{exercise}
+
+\begin{exercise}[Von Koch snowflake]
+	Let $K$ be the von Koch snowflake as desribed in class with $4^n$ intervals of length $\frac{1}{3^n}$ at the $n$-th generation. Show that
+	\[\dim(K) = \dim_M(K) = \frac{\log(4)}{\log(3)}\]
+\end{exercise}
+
+\begin{exercise}
+    Show that any non-constant continuous curve $\gamma$ has $\dim(\gamma) \geq 1$.
+\end{exercise}
+
+\begin{exercise}
+    Construct a set $S \subseteq \mathbb{N}$ such that 
+    \[\overline{d}(S) = 1, \text{ and } \underline{d}(S) = 0.\]
+\end{exercise}
+
+\begin{exercise}
+	Show that for $A = \begin{pmatrix}
+		1 & 1 \\
+		1 & 0
+	\end{pmatrix}$ the number of $2$-adic intervals $I_n$ needed to cover $X_A$ build the Fibonacci sequence and calculate the spectral radius of $A$. Deduce the Minkowski dimension of $X_A$.
+\end{exercise}
+
+\begin{exercise}
+	Recall that for a matrix $b \times b$ matrix $A$ with entries in $\{0, 1\}$ we define $Y_A = \{(x,y) \in [0,1]^2: \, A_{y_n, x_n} = 1 \; \forall n\}$ where $x_n, y_n$ are the expansions in the basis of $b$. Let $||A||$ denote the number of ones in $A$. Show that 
+	\[\dim_M(Y_A) = \frac{\log(||A||)}{\log(b)}.\]
+\end{exercise}
+
+\end{document}

@@ -1,0 +1,52 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[french]{babel}
+\usepackage[latin1]{inputenc}
+%\usepackage{umlaut,amssymb,amsmath,amscd,a4,amsfonts}
+\usepackage{amssymb,amsmath,amscd,a4,amsfonts,amsthm,mathrsfs}
+%(a4 = 210 X 297 mm)
+\hoffset -1in \voffset -1in \oddsidemargin 20mm \evensidemargin
+\oddsidemargin \textwidth 170mm \topmargin 5mm \textheight 247mm
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+
+\theoremstyle{definition}
+\newtheorem{exercise}{Exercise}
+
+\begin{document}
+
+\pagestyle{headings}
+\noindent UNIVERSITE DE GENEVE \hfill Section de Mathématiques\\
+\noindent Facult\'e des sciences \hfill \\[-3mm]
+\hrule
+
+\large
+
+\begin{center}
+\textbf{Topics In Probability And Analysis \\ Exercise Sheet 10 - Discussed on 10.12.2020}
+\end{center}
+\hrule
+\text{}\\[1cm]
+
+Let's review some complex analysis. 
+
+Recall that we call a set $K$ removable for a set of functions $A$ on the domain $\Omega$ if 
+\[f \in \text{Hol}(\Omega \setminus K) \cap A \implies f \in \text{Hol}(\Omega).\]
+
+\begin{exercise}
+	Show that the slit $[-1, 1]$ is not removable on the domain $\mathbb{C}$ for bounded functions.
+\end{exercise}
+
+\begin{exercise}
+	Review the proof of the theorem showing that $K$ is removable for $\text{Höl}(\alpha)$ if and only if $\mathscr{H}_{1+\alpha}(K) = 0$ for $0 < \alpha < 1$.
+
+	What goes wrong for $\alpha = 1$? Can you find a counterexample?
+\end{exercise}
+
+\begin{exercise}
+	In the lecture we constructed a measure $\mu$ supported on the set $K$ via the Frostman lemma. We then constructed the function $f(z) = \frac{1}{z} * \mu = \int_K \frac{1}{z-u} d\mu(u)$.
+
+	Show that this is well defined for $z \not\in K$.
+\end{exercise}
+
+\end{document}

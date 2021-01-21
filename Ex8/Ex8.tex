@@ -1,0 +1,44 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[french]{babel}
+\usepackage[latin1]{inputenc}
+%\usepackage{umlaut,amssymb,amsmath,amscd,a4,amsfonts}
+\usepackage{amssymb,amsmath,amscd,a4,amsfonts,amsthm,mathrsfs}
+%(a4 = 210 X 297 mm)
+\hoffset -1in \voffset -1in \oddsidemargin 20mm \evensidemargin
+\oddsidemargin \textwidth 170mm \topmargin 5mm \textheight 247mm
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+
+\theoremstyle{definition}
+\newtheorem{exercise}{Exercise}
+
+\begin{document}
+
+\pagestyle{headings}
+\noindent UNIVERSITE DE GENEVE \hfill Section de Mathématiques\\
+\noindent Facult\'e des sciences \hfill \\[-3mm]
+\hrule
+
+\large
+
+\begin{center}
+\textbf{Topics In Probability And Analysis \\ Exercise Sheet 8 - Discussed on 26.11.2020}
+\end{center}
+\hrule
+\text{}\\[1cm]
+
+\begin{exercise}
+    We define the packing number as 
+    \[N_p(K, \epsilon) = \max\{\# z_j \in K : \; |z_j - z_i| > \epsilon \; \forall i \neq  j\}.\]
+    Show that
+    \[N(K, 4\epsilon) \leq N_p(K, \epsilon) \leq N(K,\epsilon)\]
+    and therefore the packing dimension and the Minkowski dimension agree.
+\end{exercise}
+
+\begin{exercise}
+    Let $K\subset \mathbb{R}^d$. Denote by $K^\epsilon$ the $\epsilon$-neighborhood of $K$. Show that
+    \[\overline{\dim}_M(K) = d + \overline{\lim_{\epsilon \to 0}} ;\ \frac{\log(\text{Vol}(K^\epsilon))}{\log(\frac{1}{\epsilon} )}.\]
+\end{exercise}
+
+\end{document}

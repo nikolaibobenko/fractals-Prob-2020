@@ -1,0 +1,64 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[french]{babel}
+\usepackage[latin1]{inputenc}
+%\usepackage{umlaut,amssymb,amsmath,amscd,a4,amsfonts}
+\usepackage{amssymb,amsmath,amscd,a4,amsfonts,amsthm,mathrsfs}
+%(a4 = 210 X 297 mm)
+\hoffset -1in \voffset -1in \oddsidemargin 20mm \evensidemargin
+\oddsidemargin \textwidth 170mm \topmargin 5mm \textheight 247mm
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+
+\theoremstyle{definition}
+\newtheorem{exercise}{Exercise}
+
+\begin{document}
+
+\pagestyle{headings}
+\noindent UNIVERSITE DE GENEVE \hfill Section de Mathématiques\\
+\noindent Facult\'e des sciences \hfill \\[-3mm]
+\hrule
+
+\large
+
+\begin{center}
+\textbf{Topics In Probability And Analysis \\ Exercise Sheet 1 - Discussed on 24.09.2020}
+\end{center}
+\hrule
+\text{}\\[1cm]
+
+
+Recall that we defined the Minkowski content of a set $K$ as $M^\alpha_\epsilon(K) = \epsilon^\alpha N(K, \epsilon)$ where $N(K, \epsilon)$ is the minimal amount of $\frac{\epsilon}{2}$-balls needed to cover $K$. In the following we assume that $K$ is a bounded set in $\mathbb{R}^d$.
+
+\begin{exercise}[Equivalence of Minkowski contents]
+    Show that for any $\epsilon = \frac{1}{2^n}$ for $n \in \mathbb{N}$ we have
+    \[M_\epsilon^\alpha(K) \asymp \inf\{\sum_j |Q_j|^\alpha: \, Q_j \text{ are dyadic cubes}, K\subset \bigcup_j Q_j, |Q_j| = \epsilon\}.\]
+\end{exercise}
+
+\begin{exercise}[Equivalence of Hausdorff dimension definitions]
+	Show that
+	\begin{align*}
+		\dim(K) = & \inf\{\alpha: \mathscr{H}^\alpha(K) = 0\} = \inf\{\alpha: \mathscr{H}^\alpha(K) < \infty\} \\
+		= & \sup\{\alpha: \mathscr{H}^\alpha(K) = \infty\} = \sup\{\alpha: \mathscr{H}^\alpha(K) > 0\}
+	\end{align*}
+
+\end{exercise}
+
+\begin{exercise}
+    Show that
+    \[\dim(K) = 0\]
+    holds for any countable set $K$.
+\end{exercise}
+
+\begin{exercise}
+	Show that $\dim(K) \leq \underline{\dim}_M(K) \leq \overline{\dim}_M(K)$. 
+\end{exercise}
+
+\begin{exercise}
+	Construct a set $K$ such that $\dim(K) < \underline{\dim}_M(K) < \overline{\dim}_M(K)$ holds.
+\end{exercise}
+
+
+
+\end{document}

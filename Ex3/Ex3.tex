@@ -1,0 +1,52 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[french]{babel}
+\usepackage[latin1]{inputenc}
+%\usepackage{umlaut,amssymb,amsmath,amscd,a4,amsfonts}
+\usepackage{amssymb,amsmath,amscd,a4,amsfonts,amsthm,mathrsfs}
+%(a4 = 210 X 297 mm)
+\hoffset -1in \voffset -1in \oddsidemargin 20mm \evensidemargin
+\oddsidemargin \textwidth 170mm \topmargin 5mm \textheight 247mm
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+
+\theoremstyle{definition}
+\newtheorem{exercise}{Exercise}
+
+\begin{document}
+
+\pagestyle{headings}
+\noindent UNIVERSITE DE GENEVE \hfill Section de Mathématiques\\
+\noindent Facult\'e des sciences \hfill \\[-3mm]
+\hrule
+
+\large
+
+\begin{center}
+\textbf{Topics In Probability And Analysis \\ Exercise Sheet 3 - Discussed on 08.10.2020}
+\end{center}
+\hrule
+\text{}\\[1cm]
+
+\begin{exercise}(Billingsley's Lemma with Vitali coverings)
+	In class we showed Billingsley's Lemma for measures on the interval $[0,1]$. In the statement and proof we used the dyadic intervals $I_n(x)$. Show that we can generalize the statement by replacing this with a Vitali covering with the bounded subcover property.
+\end{exercise}
+
+\begin{exercise}
+	We defined the dimension of a measure $\mu$ as
+	\[\dim(\mu) = \inf\{\dim(A): \; A \text{ Borel}, \mu(A^c) = 0\}.\]
+
+	Show that this is equivalent to
+	\[\dim(\mu) = \inf\{\alpha: \mu \bot \mathscr{H}^\alpha\}\]
+	where two measures $\mu, \nu$ are called orthogonal if there exists a set $A$ such that $\mu(A^c) = 0 = \nu(A)$.
+\end{exercise}
+
+\begin{exercise}
+	Let $\mu$ be the measure assigning a mass $\frac{1}{2^n}$ to each $n$-th level interval of the middle-third Cantor set $K \subset [0,1]$. Calculate $\dim(\mu)$.
+\end{exercise}
+
+\begin{exercise}
+	Construct a set $A$ which has zero Hausdorff measure of its own dimension which is not $0$. That is $\dim(A) = \alpha > 0$ and $\mathscr{H}^\alpha(A) = 0$.
+\end{exercise}
+
+\end{document}

@@ -1,0 +1,46 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[french]{babel}
+\usepackage[latin1]{inputenc}
+%\usepackage{umlaut,amssymb,amsmath,amscd,a4,amsfonts}
+\usepackage{amssymb,amsmath,amscd,a4,amsfonts,amsthm,mathrsfs}
+%(a4 = 210 X 297 mm)
+\hoffset -1in \voffset -1in \oddsidemargin 20mm \evensidemargin
+\oddsidemargin \textwidth 170mm \topmargin 5mm \textheight 247mm
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+
+\theoremstyle{definition}
+\newtheorem{exercise}{Exercise}
+
+\begin{document}
+
+\pagestyle{headings}
+\noindent UNIVERSITE DE GENEVE \hfill Section de Mathématiques\\
+\noindent Facult\'e des sciences \hfill \\[-3mm]
+\hrule
+
+\large
+
+\begin{center}
+\textbf{Topics In Probability And Analysis \\ Exercise Sheet 9 - Discussed on 02.12.2020}
+\end{center}
+\hrule
+\text{}\\[1cm]
+
+\begin{exercise}
+	Let's consider the Whitney decomposition in one dimension. 
+	\begin{enumerate}
+		\item Let $\{Q_j\}$ be the Whitney decomposition of an interval $I$. Check that $\sum_j |Q_j|^s$ is comparable to $|I|^s$ for any $s \in (0,1]$.
+		\item Conclude how one can compute the Whitney dimension for compact sets $K \subset \mathbb{R}$ without calculating the Whitney decomposition.
+		\item Where does this go wrong in higher dimensions?
+		\item Calculate the Whitney dimension of the Cantor set $K$ directly.
+	\end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+	Write the Whitney dimension in terms of 
+	\[\inf \{\beta: \; \int_{\text{outside of } K} \text{dist}(x,K)^\beta d\text{Vol}(x) < \infty\}.\]
+\end{exercise}
+
+\end{document}

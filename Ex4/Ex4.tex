@@ -1,0 +1,50 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[french]{babel}
+\usepackage[latin1]{inputenc}
+%\usepackage{umlaut,amssymb,amsmath,amscd,a4,amsfonts}
+\usepackage{amssymb,amsmath,amscd,a4,amsfonts,amsthm,mathrsfs}
+%(a4 = 210 X 297 mm)
+\hoffset -1in \voffset -1in \oddsidemargin 20mm \evensidemargin
+\oddsidemargin \textwidth 170mm \topmargin 5mm \textheight 247mm
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+
+\theoremstyle{definition}
+\newtheorem{exercise}{Exercise}
+
+\begin{document}
+
+\pagestyle{headings}
+\noindent UNIVERSITE DE GENEVE \hfill Section de Mathématiques\\
+\noindent Facult\'e des sciences \hfill \\[-3mm]
+\hrule
+
+\large
+
+\begin{center}
+\textbf{Topics In Probability And Analysis \\ Exercise Sheet 4 - Discussed on 15.10.2020}
+\end{center}
+\hrule
+\text{}\\[1cm]
+
+\begin{exercise}(Entropy function)
+	Show that the entropy function $h_2(p) = p \log_2(\frac{1}{p}) + (1-p) \log_2(\frac{1}{1-p})$ is smooth, has zeros at $0$ and $1$ and reaches the maximum of $1$ at $p = \frac{1}{2}$.
+\end{exercise}
+
+\begin{exercise}
+	Let's generalize the dyadic measure from class to the b-adic context. Let ${\bf p} = (p_0, \ldots, p_{b-1})$ with $\sum_{i=0}^{b-1} p_i = 1$. We define the measure $\mu_{\bf p}(I_n(x)) = \prod_{i=1}^n p_{x_i}$ where $\{x_i\}$ is the b-ary expansion of $x$ and $I_n(x)$ is the level $n$ b-ary interval containing $x$. Show that
+	\[\dim(\mu_{\bf p}) = h_{b}({\bf p}) := \sum_{i=0}^{b-1} p_i \log_b(\frac{1}{p_i}).\]
+\end{exercise}
+
+We define the graph of a function $f : [0,1] \to \mathbb{R}$ as $G_f := \{(x, f(x)) : x \in [0,1] \}$.
+
+\begin{exercise}
+	Show that if $f$ is smooth, then $\dim(G_f) = 1.$ Furthermore construct a function $f$ such that $\dim(G_f) > 1$.
+\end{exercise}
+
+\begin{exercise}
+	Show that for a set $A$ with $\dim(A) < 1$ we have $A_x = \emptyset$ for almost every $x$.
+\end{exercise}
+
+\end{document}

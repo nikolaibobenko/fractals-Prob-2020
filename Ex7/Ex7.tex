@@ -1,0 +1,52 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[french]{babel}
+\usepackage[latin1]{inputenc}
+%\usepackage{umlaut,amssymb,amsmath,amscd,a4,amsfonts}
+\usepackage{amssymb,amsmath,amscd,a4,amsfonts,amsthm,mathrsfs}
+%(a4 = 210 X 297 mm)
+\hoffset -1in \voffset -1in \oddsidemargin 20mm \evensidemargin
+\oddsidemargin \textwidth 170mm \topmargin 5mm \textheight 247mm
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+
+\theoremstyle{definition}
+\newtheorem{exercise}{Exercise}
+
+\begin{document}
+
+\pagestyle{headings}
+\noindent UNIVERSITE DE GENEVE \hfill Section de Mathématiques\\
+\noindent Facult\'e des sciences \hfill \\[-3mm]
+\hrule
+
+\large
+
+\begin{center}
+\textbf{Topics In Probability And Analysis \\ Exercise Sheet 7 - Discussed on 05.11.2020}
+\end{center}
+\hrule
+\text{}\\[1cm]
+
+We call a set $H \subset \mathbb{N}$ Poincaré if $\forall S \subset \mathbb{N}$ with $\bar{d}(S) > 0$ we have
+\[(S-S) \cap H \neq \emptyset\]
+
+\begin{exercise}
+    Let $H \subset \mathbb{N}$ be finite. We denote by 
+    \[ K_H = \{x = \sum x_n 2^{-n} :\; x_n x_{n+h} = 0 \text{ if } h \in H\}. \]
+    Show that $\dim(K_H) = \dim_M(K_H)$. How can we calculate $\dim(K_H)$?
+\end{exercise}
+
+\begin{exercise}
+    For the following sets check whether they are Poincaré or not:
+    \begin{enumerate}
+        \item $k \mathbb{N}$
+        \item $2 \mathbb{N} + 1$
+        \item $\{n^2\}_n$
+        \item $\{n^2 + 1\}_n$
+    \end{enumerate}
+\end{exercise}
+
+
+
+\end{document}
